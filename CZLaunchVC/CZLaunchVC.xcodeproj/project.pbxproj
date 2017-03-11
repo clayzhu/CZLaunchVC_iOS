@@ -13,6 +13,7 @@
 		B7BB27F61E74273B00EF4983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BB27F41E74273B00EF4983 /* Main.storyboard */; };
 		B7BB27F81E74273B00EF4983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7BB27F71E74273B00EF4983 /* Assets.xcassets */; };
 		B7BB27FB1E74273B00EF4983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BB27F91E74273B00EF4983 /* LaunchScreen.storyboard */; };
+		B7BB28051E742CB200EF4983 /* CZLaunchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BB28041E742CB200EF4983 /* CZLaunchVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B7BB27F71E74273B00EF4983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7BB27FA1E74273B00EF4983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7BB27FC1E74273B00EF4983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7BB28031E742CB200EF4983 /* CZLaunchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZLaunchVC.h; sourceTree = "<group>"; };
+		B7BB28041E742CB200EF4983 /* CZLaunchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZLaunchVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 				B7BB27F91E74273B00EF4983 /* LaunchScreen.storyboard */,
 				B7BB27FC1E74273B00EF4983 /* Info.plist */,
 				B7BB27EB1E74273B00EF4983 /* Supporting Files */,
+				B7BB28021E742CB200EF4983 /* CZLaunchVC */,
 			);
 			path = CZLaunchVC;
 			sourceTree = "<group>";
@@ -77,6 +81,15 @@
 				B7BB27EC1E74273B00EF4983 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7BB28021E742CB200EF4983 /* CZLaunchVC */ = {
+			isa = PBXGroup;
+			children = (
+				B7BB28031E742CB200EF4983 /* CZLaunchVC.h */,
+				B7BB28041E742CB200EF4983 /* CZLaunchVC.m */,
+			);
+			path = CZLaunchVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7BB28051E742CB200EF4983 /* CZLaunchVC.m in Sources */,
 				B7BB27F31E74273B00EF4983 /* ViewController.m in Sources */,
 				B7BB27F01E74273B00EF4983 /* AppDelegate.m in Sources */,
 				B7BB27ED1E74273B00EF4983 /* main.m in Sources */,
