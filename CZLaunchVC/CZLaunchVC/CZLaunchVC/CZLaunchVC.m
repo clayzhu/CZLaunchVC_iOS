@@ -45,7 +45,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
-	NSLog(@"%@", NSStringFromClass(self.class));
+	NSLog(@"appear:%@", NSStringFromClass(self.class));
 }
 
 - (void)dealloc {
