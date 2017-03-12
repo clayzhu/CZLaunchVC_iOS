@@ -10,6 +10,7 @@
 		B753FF6C1E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B753FF681E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 */; };
 		B753FF6D1E75A0340001F3D7 /* launch0.png in Resources */ = {isa = PBXBuildFile; fileRef = B753FF691E75A0340001F3D7 /* launch0.png */; };
 		B753FF6E1E75A0340001F3D7 /* launch1.png in Resources */ = {isa = PBXBuildFile; fileRef = B753FF6A1E75A0340001F3D7 /* launch1.png */; };
+		B753FF711E75BABB0001F3D7 /* launch2.png in Resources */ = {isa = PBXBuildFile; fileRef = B753FF701E75BABB0001F3D7 /* launch2.png */; };
 		B7BB27ED1E74273B00EF4983 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BB27EC1E74273B00EF4983 /* main.m */; };
 		B7BB27F01E74273B00EF4983 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BB27EF1E74273B00EF4983 /* AppDelegate.m */; };
 		B7BB27F31E74273B00EF4983 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BB27F21E74273B00EF4983 /* ViewController.m */; };
@@ -23,6 +24,7 @@
 		B753FF681E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hotel California_ Short - The Eagles.mp4"; sourceTree = "<group>"; };
 		B753FF691E75A0340001F3D7 /* launch0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch0.png; sourceTree = "<group>"; };
 		B753FF6A1E75A0340001F3D7 /* launch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch1.png; sourceTree = "<group>"; };
+		B753FF701E75BABB0001F3D7 /* launch2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch2.png; sourceTree = "<group>"; };
 		B7BB27E81E74273B00EF4983 /* CZLaunchVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CZLaunchVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7BB27EC1E74273B00EF4983 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7BB27EE1E74273B00EF4983 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				B753FF681E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 */,
 				B753FF691E75A0340001F3D7 /* launch0.png */,
 				B753FF6A1E75A0340001F3D7 /* launch1.png */,
+				B753FF701E75BABB0001F3D7 /* launch2.png */,
 				B7BB27EB1E74273B00EF4983 /* Supporting Files */,
 				B7BB28021E742CB200EF4983 /* CZLaunchVC */,
 			);
@@ -162,6 +165,7 @@
 				B753FF6D1E75A0340001F3D7 /* launch0.png in Resources */,
 				B7BB27FB1E74273B00EF4983 /* LaunchScreen.storyboard in Resources */,
 				B753FF6C1E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 in Resources */,
+				B753FF711E75BABB0001F3D7 /* launch2.png in Resources */,
 				B7BB27F81E74273B00EF4983 /* Assets.xcassets in Resources */,
 				B753FF6E1E75A0340001F3D7 /* launch1.png in Resources */,
 				B7BB27F61E74273B00EF4983 /* Main.storyboard in Resources */,
