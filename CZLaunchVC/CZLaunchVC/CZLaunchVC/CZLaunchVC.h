@@ -62,3 +62,9 @@
 - (void)transitionWithType:(NSString *)type subtype:(NSString *)subtype timingFunctionName:(NSString *)timingFunctionName duration:(CGFloat)duration;
 
 @end
+
+@interface UIImage (CZLaunchGIF)
+
++ (UIImage *)sd_animatedGIFNamed:(NSString *)name;
+
+@end
