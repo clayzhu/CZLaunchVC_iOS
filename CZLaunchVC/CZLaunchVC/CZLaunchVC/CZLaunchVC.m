@@ -134,6 +134,37 @@
 	self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(launchCountDownAction:) userInfo:nil repeats:YES];
 }
 
+- (void)launchWithGIFNamed:(NSString *)name
+			   repeatCount:(NSUInteger)repeatCount
+					config:(void (^)(UIButton *))configBlock
+					 enter:(void (^)(void))enterBlock {
+	// GIF 图
+	UIImage *image = [UIImage sd_animatedGIFNamed:name];
+	NSArray *images = image.images;
+	// 绘制 UIImageView
+	UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, kCZLaunchScreenWidth, kCZLaunchScreenHeight)];
+	iv.contentMode = UIViewContentModeScaleAspectFill;
+	iv.clipsToBounds = YES;
+	iv.animationImages = images;
+	iv.animationRepeatCount = repeatCount;
+	NSTimeInterval duration = images.count / 30.0;	// 默认动图播放每秒30帧，单次播放时长计算公式为：images.count / 30.0
+	iv.animationDuration = duration;
+	[iv startAnimating];
+	[self.view addSubview:iv];
+	
+	if (configBlock) {	// 实现了按钮配置的 block，则显示一个自定义配置的完成按钮，点击按钮执行 enterBlock
+		configBlock([self setupEnterButtonInView:self.view]);
+	} else {	// 未实现按钮配置的 block，则在视频播放完成后，自动执行 enterBlock
+		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)((duration * repeatCount) * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+			[self enterAction];
+		});
+	}
+	
+	if (enterBlock) {
+		self.enterBlock = enterBlock;
+	}
+}
+
 #pragma mark - Private
 - (UIButton *)setupEnterButtonInView:(UIView *)view {
 	// 点击完成的按钮
@@ -318,14 +349,20 @@
 
 + (UIImage *)sd_animatedGIFNamed:(NSString *)name {
 	CGFloat scale = [UIScreen mainScreen].scale;
+	NSString *type;
+	if ([name hasSuffix:@".gif"]) {
+		type = nil;
+	} else {
+		type = @"gif";
+	}
 	if (scale > 1.0f) {
-		NSString *retinaPath = [[NSBundle mainBundle] pathForResource:[name stringByAppendingString:@"@2x"] ofType:@"gif"];
+		NSString *retinaPath = [[NSBundle mainBundle] pathForResource:[name stringByAppendingString:@"@2x"] ofType:type];
 		NSData *data = [NSData dataWithContentsOfFile:retinaPath];
 		if (data) {
 			return [UIImage sd_animatedGIFWithData:data];
 		}
 		
-		NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"gif"];
+		NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:type];
 		data = [NSData dataWithContentsOfFile:path];
 		if (data) {
 			return [UIImage sd_animatedGIFWithData:data];
@@ -333,7 +370,7 @@
 		
 		return [UIImage imageNamed:name];
 	} else {
-		NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"gif"];
+		NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:type];
 		NSData *data = [NSData dataWithContentsOfFile:path];
 		if (data) {
 			return [UIImage sd_animatedGIFWithData:data];

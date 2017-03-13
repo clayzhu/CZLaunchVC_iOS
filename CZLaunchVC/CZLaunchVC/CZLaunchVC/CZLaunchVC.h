@@ -47,6 +47,19 @@
 				 config:(void (^)(UIButton *enterButton))configBlock
 				  enter:(void (^)(void))enterBlock;
 
+/**
+ 使用 GIF 图片的启动画面
+
+ @param name GIF 图片名称。“.gif”后缀可传可不传
+ @param repeatCount GIF 图片重复次数
+ @param configBlock 如果要显示一个完成 GIF 图片动画，点击执行 enterBlock 的按钮，则实现这个 configBlock；设置为 nil，则不显示按钮，等待播放完毕后自动执行 enterBlock
+ @param enterBlock 点击完成按钮或 GIF 图片动画完毕后，执行的功能，一般为设置 window.rootViewController
+ */
+- (void)launchWithGIFNamed:(NSString *)name
+			   repeatCount:(NSUInteger)repeatCount
+					config:(void (^)(UIButton *enterButton))configBlock
+					 enter:(void (^)(void))enterBlock;
+
 @end
 
 @interface CALayer (CZLaunchTransition)
@@ -65,6 +78,12 @@
 
 @interface UIImage (CZLaunchGIF)
 
+/**
+ 通过 GIF 文件名称解析出一张包含每一帧图片的动画图片
+
+ @param name GIF 图片名称。“.gif”后缀可传可不传
+ @return 一张包含 GIF 每一帧图片的动画图片
+ */
 + (UIImage *)sd_animatedGIFNamed:(NSString *)name;
 
 @end
