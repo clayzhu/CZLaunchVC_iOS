@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18BF396E1E7681FA00B3CB72 /* Hotel-California_-Short-The-Eagles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18BF396D1E7681FA00B3CB72 /* Hotel-California_-Short-The-Eagles.gif */; };
 		B753FF6C1E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B753FF681E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 */; };
 		B753FF6D1E75A0340001F3D7 /* launch0.png in Resources */ = {isa = PBXBuildFile; fileRef = B753FF691E75A0340001F3D7 /* launch0.png */; };
 		B753FF6E1E75A0340001F3D7 /* launch1.png in Resources */ = {isa = PBXBuildFile; fileRef = B753FF6A1E75A0340001F3D7 /* launch1.png */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18BF396D1E7681FA00B3CB72 /* Hotel-California_-Short-The-Eagles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Hotel-California_-Short-The-Eagles.gif"; sourceTree = "<group>"; };
 		B753FF681E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hotel California_ Short - The Eagles.mp4"; sourceTree = "<group>"; };
 		B753FF691E75A0340001F3D7 /* launch0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch0.png; sourceTree = "<group>"; };
 		B753FF6A1E75A0340001F3D7 /* launch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch1.png; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				B753FF691E75A0340001F3D7 /* launch0.png */,
 				B753FF6A1E75A0340001F3D7 /* launch1.png */,
 				B753FF701E75BABB0001F3D7 /* launch2.png */,
+				18BF396D1E7681FA00B3CB72 /* Hotel-California_-Short-The-Eagles.gif */,
 				B7BB27EB1E74273B00EF4983 /* Supporting Files */,
 				B7BB28021E742CB200EF4983 /* CZLaunchVC */,
 			);
@@ -165,6 +168,7 @@
 				B753FF6D1E75A0340001F3D7 /* launch0.png in Resources */,
 				B7BB27FB1E74273B00EF4983 /* LaunchScreen.storyboard in Resources */,
 				B753FF6C1E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 in Resources */,
+				18BF396E1E7681FA00B3CB72 /* Hotel-California_-Short-The-Eagles.gif in Resources */,
 				B753FF711E75BABB0001F3D7 /* launch2.png in Resources */,
 				B7BB27F81E74273B00EF4983 /* Assets.xcassets in Resources */,
 				B753FF6E1E75A0340001F3D7 /* launch1.png in Resources */,
