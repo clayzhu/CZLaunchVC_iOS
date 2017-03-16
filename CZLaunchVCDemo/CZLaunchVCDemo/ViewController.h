@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  CZLaunchVC
+//  CZLaunchVCDemo
 //
 //  Created by ug19 on 2017/3/11.
 //  Copyright © 2017年 Ugood. All rights reserved.
