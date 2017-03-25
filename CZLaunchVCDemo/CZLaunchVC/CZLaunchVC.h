@@ -72,7 +72,10 @@
  @param timingFunctionName 动画速率函数名称，包括：kCAMediaTimingFunctionLinear, kCAMediaTimingFunctionEaseIn, kCAMediaTimingFunctionEaseOut, kCAMediaTimingFunctionEaseInEaseOut, kCAMediaTimingFunctionDefault
  @param duration 动画时长
  */
-- (void)transitionWithType:(NSString *)type subtype:(NSString *)subtype timingFunctionName:(NSString *)timingFunctionName duration:(CGFloat)duration;
+- (void)transitionWithType:(NSString *)type
+                   subtype:(NSString *)subtype
+        timingFunctionName:(NSString *)timingFunctionName
+                  duration:(CGFloat)duration;
 
 @end
 
