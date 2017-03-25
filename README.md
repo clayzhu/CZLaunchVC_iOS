@@ -26,3 +26,9 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
 2. CALayer+CZLaunchTransition：用于完成启动画面后，平滑过渡到主界面
 3. UIImage+CZLaunchGIF：借助于 [SDWebImage](https://github.com/rs/SDWebImage)，实现 GIF 图转 UIImage 的功能
 
+### 3.1 CZLaunchVC
+
+### 3.2 CALayer+CZLaunchTransition
+
+### 3.3 UIImage+CZLaunchGIF
+
