@@ -39,8 +39,8 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
  @param enterBlock 点击完成按钮或播放完毕后，执行的功能，一般为设置 window.rootViewController
  */
 - (void)launchWithMovieURL:(NSURL *)url
-					config:(void (^)(UIButton *enterButton))configBlock
-					 enter:(void (^)(void))enterBlock;
+                    config:(void (^)(UIButton *enterButton))configBlock
+                     enter:(void (^)(void))enterBlock;
 ```
 
 #### 3.1.2 使用多张图片滑动展示的启动画面
@@ -55,9 +55,9 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
  @param enterBlock 点击完成按钮或滑动完毕后，执行的功能，一般为设置 window.rootViewController
  */
 - (void)launchWithImages:(NSArray<UIImage *> *)images
-	   configEnterButton:(void (^)(UIButton *enterButton))configEnterButtonBlock
-	   configPageControl:(void (^)(UIPageControl *pageControl))configPageControlBlock
-				   enter:(void (^)(void))enterBlock;
+       configEnterButton:(void (^)(UIButton *enterButton))configEnterButtonBlock
+       configPageControl:(void (^)(UIPageControl *pageControl))configPageControlBlock
+                   enter:(void (^)(void))enterBlock;
 ```
 
 #### 3.1.3 使用单张图片倒计时展示的启动画面
@@ -72,9 +72,9 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
  @param enterBlock 点击完成按钮或倒计时完毕后，执行的功能，一般为设置 window.rootViewController
  */
 - (void)launchWithImage:(UIImage *)image
-			   duration:(NSUInteger)duration
-				 config:(void (^)(UIButton *enterButton))configBlock
-				  enter:(void (^)(void))enterBlock;
+               duration:(NSUInteger)duration
+                 config:(void (^)(UIButton *enterButton))configBlock
+                  enter:(void (^)(void))enterBlock;
 ```
 
 #### 3.1.4 使用 GIF 图片的启动画面
@@ -89,13 +89,12 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
  @param enterBlock 点击完成按钮或 GIF 图片动画完毕后，执行的功能，一般为设置 window.rootViewController
  */
 - (void)launchWithGIFNamed:(NSString *)name
-			   repeatCount:(NSUInteger)repeatCount
-					config:(void (^)(UIButton *enterButton))configBlock
-					 enter:(void (^)(void))enterBlock;
+               repeatCount:(NSUInteger)repeatCount
+                    config:(void (^)(UIButton *enterButton))configBlock
+                     enter:(void (^)(void))enterBlock;
 ```
 
 ### 3.2 CALayer+CZLaunchTransition
-
 
 ### 3.3 UIImage+CZLaunchGIF
 
