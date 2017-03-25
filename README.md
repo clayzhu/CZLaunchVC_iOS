@@ -18,3 +18,11 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
 
 [下载 CZLaunchVC_iOS](https://github.com/clayzhu/CZLaunchVC_iOS/archive/master.zip)，将 `/CZLaunchVCDemo/CZLaunchVC` 文件夹拖入项目中，记得在 `Destination: Copy items if needed` 前面打勾。
 
+## 3. 说明
+
+`/CZLaunchVCDemo/CZLaunchVC` 文件夹下的 `CZLaunchVC.h`、`CZLaunchVC.m`，是主要实现文件，其中包含三个类：
+
+1. CZLaunchVC：功能实现类
+2. CALayer+CZLaunchTransition：用于完成启动画面后，平滑过渡到主界面
+3. UIImage+CZLaunchGIF：借助于 [SDWebImage](https://github.com/rs/SDWebImage)，实现 GIF 图转 UIImage 的功能
+
