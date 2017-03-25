@@ -96,5 +96,20 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
 
 ### 3.2 CALayer+CZLaunchTransition
 
+```objc
+/**
+ 给 CALayer 增加过渡动画
+
+ @param type 过渡动画类型，包括：kCATransitionFade, kCATransitionMoveIn, kCATransitionPush, kCATransitionReveal（另有一些私有 API，比如：rippleEffect, suckEffect 等）
+ @param subtype 过渡动画方向，包括：kCATransitionFromRight, kCATransitionFromLeft, kCATransitionFromTop, kCATransitionFromBottom
+ @param timingFunctionName 动画速率函数名称，包括：kCAMediaTimingFunctionLinear, kCAMediaTimingFunctionEaseIn, kCAMediaTimingFunctionEaseOut, kCAMediaTimingFunctionEaseInEaseOut, kCAMediaTimingFunctionDefault
+ @param duration 动画时长
+ */
+- (void)transitionWithType:(NSString *)type
+                   subtype:(NSString *)subtype
+        timingFunctionName:(NSString *)timingFunctionName
+                  duration:(CGFloat)duration;
+```
+
 ### 3.3 UIImage+CZLaunchGIF
 
