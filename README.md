@@ -113,3 +113,13 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
 
 ### 3.3 UIImage+CZLaunchGIF
 
+```objc
+/**
+ 通过 GIF 文件名称解析出一张包含每一帧图片的动画图片
+
+ @param name GIF 图片名称。“.gif”后缀可传可不传
+ @return 一张包含 GIF 每一帧图片的动画图片
+ */
++ (UIImage *)sd_animatedGIFNamed:(NSString *)name;
+```
+
