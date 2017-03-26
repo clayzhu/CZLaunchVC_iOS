@@ -1,8 +1,6 @@
 # CZLaunchVC_iOS
 自定义启动画面，支持视频、多张图片左右滑动、单张图片倒计时。
 
-[TOC]
-
 ## 1. 介绍
 
 开发 iOS 应用过程中，经常会需要呈现一个不一样的启动画面。例如淘宝、京东等 App，都在启动画面中给用户介绍最新的活动。但是 iOS 项目框架默认提供的 `Assets.xcassets` 或 `LaunchScreen.storyboard` 都比较简单。
