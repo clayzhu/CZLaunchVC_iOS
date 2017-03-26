@@ -212,6 +212,22 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
    **3.4 使用 GIF 图片的启动画面**
    
    ```objc
-   
+   CZLaunchVC *vc = [[CZLaunchVC alloc] init];
+    [vc launchWithGIFNamed:@"Hotel-California_-Short-The-Eagles"
+               repeatCount:2
+                    config:^(UIButton *enterButton) {
+                        enterButton.frame = CGRectMake(0.0, 0.0, 100.0, 30.0);
+                        enterButton.center = CGPointMake(CGRectGetWidth([UIScreen mainScreen].bounds) / 2.0, CGRectGetHeight([UIScreen mainScreen].bounds) - 100.0);
+                        [enterButton setTitle:@"立即体验" forState:UIControlStateNormal];
+                        [enterButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+                    }
+                     enter:^{
+                         // 应用首页
+                         ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
+                         self.window.rootViewController = vc;
+                         // 显示新的 rootViewController 时的过渡动画
+                         [self.window.layer transitionWithType:kCATransitionFade subtype:kCATransitionFromTop timingFunctionName:kCAMediaTimingFunctionEaseInEaseOut duration:2.0];
+                     }];
+    self.window.rootViewController = vc;
    ```
 
