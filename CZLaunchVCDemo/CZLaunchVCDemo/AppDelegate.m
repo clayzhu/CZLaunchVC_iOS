@@ -113,22 +113,22 @@
 
 /** 设置启动页单张图片 */
 - (void)setupLaunchImage {
-	CZLaunchVC *vc = [[CZLaunchVC alloc] init];
-	[vc launchWithImage:[UIImage imageNamed:@"launch0"] duration:3
-				 config:^(UIButton *enterButton) {
-					 enterButton.frame = CGRectMake(0.0, 0.0, 100.0, 30.0);
-					 enterButton.center = CGPointMake(CGRectGetWidth([UIScreen mainScreen].bounds) / 2.0, CGRectGetHeight([UIScreen mainScreen].bounds) - 100.0);
-					 [enterButton setTitle:@"立即体验" forState:UIControlStateNormal];
-					 [enterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-				 }
-				  enter:^{
-					  // 应用首页
-					  ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
-					  self.window.rootViewController = vc;
-					  // 显示新的 rootViewController 时的过渡动画
-					  [self.window.layer transitionWithType:kCATransitionFade subtype:kCATransitionFromTop timingFunctionName:kCAMediaTimingFunctionEaseInEaseOut duration:2.0];
-				  }];
-	self.window.rootViewController = vc;
+    CZLaunchVC *vc = [[CZLaunchVC alloc] init];
+    [vc launchWithImage:[UIImage imageNamed:@"launch0"] duration:3
+                 config:^(UIButton *enterButton) {
+                     enterButton.frame = CGRectMake(0.0, 0.0, 100.0, 30.0);
+                     enterButton.center = CGPointMake(CGRectGetWidth([UIScreen mainScreen].bounds) / 2.0, CGRectGetHeight([UIScreen mainScreen].bounds) - 100.0);
+                     [enterButton setTitle:@"立即体验" forState:UIControlStateNormal];
+                     [enterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                 }
+                  enter:^{
+                      // 应用首页
+                      ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
+                      self.window.rootViewController = vc;
+                      // 显示新的 rootViewController 时的过渡动画
+                      [self.window.layer transitionWithType:kCATransitionFade subtype:kCATransitionFromTop timingFunctionName:kCAMediaTimingFunctionEaseInEaseOut duration:2.0];
+                  }];
+    self.window.rootViewController = vc;
 }
 
 /** 设置启动页 GIF 图 */
