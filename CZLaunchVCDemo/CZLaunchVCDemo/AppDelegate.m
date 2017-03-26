@@ -64,25 +64,25 @@
 
 /** 设置启动页视频 */
 - (void)setupLaunchMovie {
-	CZLaunchVC *vc = [[CZLaunchVC alloc] init];
-	// 视频 URL
-	NSURL *url = [[NSBundle mainBundle] URLForResource:@"Hotel California_ Short - The Eagles" withExtension:@"mp4"];	// 本地视频 URL
-//	NSURL *url = [NSURL URLWithString:@"http://omployphm.bkt.clouddn.com/Hotel%20California_%20Short%20-%20The%20Eagles.mp4"];	// 远程视频 URL
-	[vc launchWithMovieURL:url
-					config:^(UIButton *enterButton) {
-						enterButton.frame = CGRectMake(0.0, 0.0, 100.0, 30.0);
-						enterButton.center = CGPointMake(CGRectGetWidth([UIScreen mainScreen].bounds) / 2.0, CGRectGetHeight([UIScreen mainScreen].bounds) - 100.0);
-						[enterButton setTitle:@"立即体验" forState:UIControlStateNormal];
-						[enterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-					}
-					 enter:^{
-						 // 应用首页
-						 ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
-						 self.window.rootViewController = vc;
-						 // 显示新的 rootViewController 时的过渡动画
-						 [self.window.layer transitionWithType:kCATransitionFade subtype:kCATransitionFromTop timingFunctionName:kCAMediaTimingFunctionEaseInEaseOut duration:2.0];
-					 }];
-	self.window.rootViewController = vc;
+    CZLaunchVC *vc = [[CZLaunchVC alloc] init];
+    // 视频 URL
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Hotel California_ Short - The Eagles" withExtension:@"mp4"];   // 本地视频 URL
+//	NSURL *url = [NSURL URLWithString:@"http://omployphm.bkt.clouddn.com/Hotel%20California_%20Short%20-%20The%20Eagles.mp4"];  // 远程视频 URL
+    [vc launchWithMovieURL:url
+                    config:^(UIButton *enterButton) {
+                        enterButton.frame = CGRectMake(0.0, 0.0, 100.0, 30.0);
+                        enterButton.center = CGPointMake(CGRectGetWidth([UIScreen mainScreen].bounds) / 2.0, CGRectGetHeight([UIScreen mainScreen].bounds) - 100.0);
+                        [enterButton setTitle:@"立即体验" forState:UIControlStateNormal];
+                        [enterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                    }
+                     enter:^{
+                         // 应用首页
+                         ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
+                         self.window.rootViewController = vc;
+                         // 显示新的 rootViewController 时的过渡动画
+                         [self.window.layer transitionWithType:kCATransitionFade subtype:kCATransitionFromTop timingFunctionName:kCAMediaTimingFunctionEaseInEaseOut duration:2.0];
+                     }];
+    self.window.rootViewController = vc;
 }
 
 /** 设置启动页多张图片 */
