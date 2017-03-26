@@ -7,10 +7,10 @@
 
 CZLaunchVC_iOS 提供4种启动画面的方式：
 
-1. 视频播放
-2. 多张图片滑动
-3. 单张图片倒计时
-4. GIF 图片播放
+* 视频播放
+* 多张图片滑动
+* 单张图片倒计时
+* GIF 图片播放
 
 在上述方式的启动画面结束后，还提供了一个便捷的方法，使页面能平滑地过渡到主界面。
 
@@ -22,9 +22,9 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
 
 `/CZLaunchVCDemo/CZLaunchVC` 文件夹下的 `CZLaunchVC.h`、`CZLaunchVC.m`，是主要实现文件，其中包含三个类：
 
-1. CZLaunchVC：功能实现类
-2. CALayer+CZLaunchTransition：用于完成启动画面后，平滑过渡到主界面
-3. UIImage+CZLaunchGIF：借助于 [SDWebImage](https://github.com/rs/SDWebImage)，实现 GIF 图转 UIImage 的功能
+* CZLaunchVC：启动画面功能实现类
+* CALayer+CZLaunchTransition：用于完成启动画面后，平滑过渡到主界面
+* UIImage+CZLaunchGIF：借助于 [SDWebImage](https://github.com/rs/SDWebImage)，实现 GIF 图转 UIImage 的功能
 
 ### 3.1 CZLaunchVC
 
