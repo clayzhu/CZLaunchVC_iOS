@@ -143,7 +143,7 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
     CZLaunchVC *vc = [[CZLaunchVC alloc] init];
     // 视频 URL
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Hotel California_ Short - The Eagles" withExtension:@"mp4"];   // 本地视频 URL
- //	NSURL *url = [NSURL URLWithString:@"http://omployphm.bkt.clouddn.com/Hotel%20California_%20Short%20-%20The%20Eagles.mp4"];  // 远程视频 URL
+    //	NSURL *url = [NSURL URLWithString:@"http://omployphm.bkt.clouddn.com/Hotel%20California_%20Short%20-%20The%20Eagles.mp4"];  // 远程视频 URL
     [vc launchWithMovieURL:url
                     config:^(UIButton *enterButton) {
                         enterButton.frame = CGRectMake(0.0, 0.0, 100.0, 30.0);
