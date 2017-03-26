@@ -123,3 +123,59 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
 + (UIImage *)sd_animatedGIFNamed:(NSString *)name;
 ```
 
+## 4. 示例
+
+1. 在项目的 `TARGETS` 中，删除 `Main Interface`，关闭 Xcode 默认配置的 `rootViewController`。
+
+2. 在 `AppDelegate` 的 `- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions` 方法中，重新设置 App 的 `window`：
+
+   ```objc
+   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+   self.window.backgroundColor = [UIColor whiteColor];
+   [self.window makeKeyAndVisible];
+   ```
+
+3. 导入头文件：`#import "CZLaunchVC.h"`，根据项目需要设置相应类型的启动画面。下面给出示例代码：
+
+   **3.1 使用视频播放的启动画面**
+   
+   ```objc
+   CZLaunchVC *vc = [[CZLaunchVC alloc] init];
+	// 视频 URL
+	NSURL *url = [[NSBundle mainBundle] URLForResource:@"Hotel California_ Short - The Eagles" withExtension:@"mp4"];	// 本地视频 URL
+//	NSURL *url = [NSURL URLWithString:@"http://omployphm.bkt.clouddn.com/Hotel%20California_%20Short%20-%20The%20Eagles.mp4"];	// 远程视频 URL
+	[vc launchWithMovieURL:url
+					config:^(UIButton *enterButton) {
+						enterButton.frame = CGRectMake(0.0, 0.0, 100.0, 30.0);
+						enterButton.center = CGPointMake(CGRectGetWidth([UIScreen mainScreen].bounds) / 2.0, CGRectGetHeight([UIScreen mainScreen].bounds) - 100.0);
+						[enterButton setTitle:@"立即体验" forState:UIControlStateNormal];
+						[enterButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+					}
+					 enter:^{
+						 // 应用首页
+						 ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ViewController"];
+						 self.window.rootViewController = vc;
+						 // 显示新的 rootViewController 时的过渡动画
+						 [self.window.layer transitionWithType:kCATransitionFade subtype:kCATransitionFromTop timingFunctionName:kCAMediaTimingFunctionEaseInEaseOut duration:2.0];
+					 }];
+	self.window.rootViewController = vc;
+   ```
+   
+   **3.2 使用多张图片滑动展示的启动画面**
+   
+   ```objc
+   
+   ```
+   
+   **3.3 使用单张图片倒计时展示的启动画面**
+   
+   ```objc
+   
+   ```
+   
+   **3.4 使用 GIF 图片的启动画面**
+   
+   ```objc
+   
+   ```
+
