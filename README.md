@@ -140,10 +140,10 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
    **3.1 使用视频播放的启动画面**
    
    ```objc
-   CZLaunchVC *vc = [[CZLaunchVC alloc] init];
+    CZLaunchVC *vc = [[CZLaunchVC alloc] init];
     // 视频 URL
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"Hotel California_ Short - The Eagles" withExtension:@"mp4"];   // 本地视频 URL
-    //	NSURL *url = [NSURL URLWithString:@"http://omployphm.bkt.clouddn.com/Hotel%20California_%20Short%20-%20The%20Eagles.mp4"];  // 远程视频 URL
+//	NSURL *url = [NSURL URLWithString:@"http://omployphm.bkt.clouddn.com/Hotel%20California_%20Short%20-%20The%20Eagles.mp4"];  // 远程视频 URL
     [vc launchWithMovieURL:url
                     config:^(UIButton *enterButton) {
                         enterButton.frame = CGRectMake(0.0, 0.0, 100.0, 30.0);
@@ -164,7 +164,7 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
    **3.2 使用多张图片滑动展示的启动画面**
    
    ```objc
-   CZLaunchVC *vc = [[CZLaunchVC alloc] init];
+    CZLaunchVC *vc = [[CZLaunchVC alloc] init];
     [vc launchWithImages:@[[UIImage imageNamed:@"launch0"],
                            [UIImage imageNamed:@"launch1"],
                            [UIImage imageNamed:@"launch2"]]
@@ -191,7 +191,7 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
    **3.3 使用单张图片倒计时展示的启动画面**
    
    ```objc
-   CZLaunchVC *vc = [[CZLaunchVC alloc] init];
+    CZLaunchVC *vc = [[CZLaunchVC alloc] init];
     [vc launchWithImage:[UIImage imageNamed:@"launch0"] duration:3
                  config:^(UIButton *enterButton) {
                      enterButton.frame = CGRectMake(0.0, 0.0, 100.0, 30.0);
@@ -212,7 +212,7 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
    **3.4 使用 GIF 图片的启动画面**
    
    ```objc
-   CZLaunchVC *vc = [[CZLaunchVC alloc] init];
+    CZLaunchVC *vc = [[CZLaunchVC alloc] init];
     [vc launchWithGIFNamed:@"Hotel-California_-Short-The-Eagles"
                repeatCount:2
                     config:^(UIButton *enterButton) {
