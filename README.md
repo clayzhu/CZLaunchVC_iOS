@@ -8,9 +8,9 @@
      * [3.1.1 使用视频播放的启动画面](#311-使用视频播放的启动画面)
      * [3.1.2 使用多张图片滑动展示的启动画面](#312-使用多张图片滑动展示的启动画面)
      * [3.1.3 使用单张图片倒计时展示的启动画面](#313-使用单张图片倒计时展示的启动画面)
-     * [3.1.4 使用 GIF 图片的启动画面](#314-使用 GIF 图片的启动画面)
-   * [3.2 CALayer+CZLaunchTransition](#32-CALayer+CZLaunchTransition)
-   * [3.3 UIImage+CZLaunchGIF](#33-UIImage+CZLaunchGIF)
+     * [3.1.4 使用 GIF 图片的启动画面](#314-使用-gif-图片的启动画面)
+   * [3.2 CALayer+CZLaunchTransition](#32-calayerczlaunchtransition)
+   * [3.3 UIImage+CZLaunchGIF](#33-uiimageczlaunchgif)
 * [4. 示例](#4-示例)
 
 ## 1. 介绍
