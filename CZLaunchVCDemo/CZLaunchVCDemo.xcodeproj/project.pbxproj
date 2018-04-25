@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		18BF396E1E7681FA00B3CB72 /* Hotel-California_-Short-The-Eagles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18BF396D1E7681FA00B3CB72 /* Hotel-California_-Short-The-Eagles.gif */; };
-		18E4E27D1E7A3BB00058716B /* CZLaunchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E4E27C1E7A3BB00058716B /* CZLaunchVC.m */; };
 		B753FF6C1E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B753FF681E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 */; };
 		B753FF6D1E75A0340001F3D7 /* launch0.png in Resources */ = {isa = PBXBuildFile; fileRef = B753FF691E75A0340001F3D7 /* launch0.png */; };
 		B753FF6E1E75A0340001F3D7 /* launch1.png in Resources */ = {isa = PBXBuildFile; fileRef = B753FF6A1E75A0340001F3D7 /* launch1.png */; };
@@ -19,12 +18,11 @@
 		B7BB27F61E74273B00EF4983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BB27F41E74273B00EF4983 /* Main.storyboard */; };
 		B7BB27F81E74273B00EF4983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7BB27F71E74273B00EF4983 /* Assets.xcassets */; };
 		B7BB27FB1E74273B00EF4983 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7BB27F91E74273B00EF4983 /* LaunchScreen.storyboard */; };
+		E65B02BA20901C8A0065A314 /* CZLaunchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E65B02B920901C8A0065A314 /* CZLaunchVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18BF396D1E7681FA00B3CB72 /* Hotel-California_-Short-The-Eagles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Hotel-California_-Short-The-Eagles.gif"; sourceTree = "<group>"; };
-		18E4E27B1E7A3BB00058716B /* CZLaunchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZLaunchVC.h; sourceTree = "<group>"; };
-		18E4E27C1E7A3BB00058716B /* CZLaunchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZLaunchVC.m; sourceTree = "<group>"; };
 		B753FF681E75A0340001F3D7 /* Hotel California_ Short - The Eagles.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hotel California_ Short - The Eagles.mp4"; sourceTree = "<group>"; };
 		B753FF691E75A0340001F3D7 /* launch0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch0.png; sourceTree = "<group>"; };
 		B753FF6A1E75A0340001F3D7 /* launch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch1.png; sourceTree = "<group>"; };
@@ -39,6 +37,8 @@
 		B7BB27F71E74273B00EF4983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7BB27FA1E74273B00EF4983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7BB27FC1E74273B00EF4983 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E65B02B820901C8A0065A314 /* CZLaunchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZLaunchVC.h; sourceTree = "<group>"; };
+		E65B02B920901C8A0065A314 /* CZLaunchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZLaunchVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,20 +52,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18E4E27A1E7A3BB00058716B /* CZLaunchVC */ = {
-			isa = PBXGroup;
-			children = (
-				18E4E27B1E7A3BB00058716B /* CZLaunchVC.h */,
-				18E4E27C1E7A3BB00058716B /* CZLaunchVC.m */,
-			);
-			path = CZLaunchVC;
-			sourceTree = "<group>";
-		};
 		B7BB27DF1E74273B00EF4983 = {
 			isa = PBXGroup;
 			children = (
 				B7BB27EA1E74273B00EF4983 /* CZLaunchVCDemo */,
-				18E4E27A1E7A3BB00058716B /* CZLaunchVC */,
+				E65B02B720901C8A0065A314 /* CZLaunchVC */,
 				B7BB27E91E74273B00EF4983 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +96,16 @@
 				B7BB27EC1E74273B00EF4983 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E65B02B720901C8A0065A314 /* CZLaunchVC */ = {
+			isa = PBXGroup;
+			children = (
+				E65B02B820901C8A0065A314 /* CZLaunchVC.h */,
+				E65B02B920901C8A0065A314 /* CZLaunchVC.m */,
+			);
+			name = CZLaunchVC;
+			path = ../CZLaunchVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E4E27D1E7A3BB00058716B /* CZLaunchVC.m in Sources */,
+				E65B02BA20901C8A0065A314 /* CZLaunchVC.m in Sources */,
 				B7BB27F31E74273B00EF4983 /* ViewController.m in Sources */,
 				B7BB27F01E74273B00EF4983 /* AppDelegate.m in Sources */,
 				B7BB27ED1E74273B00EF4983 /* main.m in Sources */,
