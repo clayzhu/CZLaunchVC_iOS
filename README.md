@@ -42,11 +42,11 @@ pod 'CZLaunchVC'
 
 ## 3. 说明
 
-`/CZLaunchVCDemo/CZLaunchVC` 文件夹下的 `CZLaunchVC.h`、`CZLaunchVC.m`，是主要实现文件，其中包含三个类：
+`/CZLaunchVC` 文件夹下的 `CZLaunchVC.h`、`CZLaunchVC.m`，是主要实现文件，其中包含三个类：
 
-* CZLaunchVC：启动画面功能实现类
-* CALayer+CZLaunchTransition：用于完成启动画面后，平滑过渡到主界面
-* UIImage+CZLaunchGIF：借助于 [SDWebImage](https://github.com/rs/SDWebImage)，实现 GIF 图转 UIImage 的功能
+* **CZLaunchVC**：启动画面功能实现类
+* **CALayer+CZLaunchTransition**：用于完成启动画面后，平滑过渡到主界面
+* **UIImage+CZLaunchGIF**：借助于 [SDWebImage](https://github.com/rs/SDWebImage)，实现 GIF 图转 UIImage 的功能
 
 ### 3.1 CZLaunchVC
 
