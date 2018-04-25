@@ -3,6 +3,8 @@
 
 * [1. 介绍](#1-介绍)
 * [2. 安装](#2-安装)
+  * [2.1 使用 CocoaPods](#21-使用-cocoapods)
+  * [2.2 手动导入](#22-手动导入)
 * [3. 说明](#3-说明)
    * [3.1 CZLaunchVC](#31-czlaunchvc)
      * [3.1.1 使用视频播放的启动画面](#311-使用视频播放的启动画面)
@@ -28,7 +30,15 @@ CZLaunchVC_iOS 提供4种启动画面的方式：
 
 ## 2. 安装
 
-[下载 CZLaunchVC_iOS](https://github.com/clayzhu/CZLaunchVC_iOS/archive/master.zip)，将 `/CZLaunchVCDemo/CZLaunchVC` 文件夹拖入项目中，记得在 `Destination: Copy items if needed` 前面打勾。
+### 2.1 使用 CocoaPods
+
+```
+pod 'CZLaunchVC'
+```
+
+### 2.2 手动导入
+
+[下载 CZLaunchVC_iOS](https://github.com/clayzhu/CZLaunchVC_iOS/archive/master.zip)，将 `/CZLaunchVC` 文件夹拖入项目中，记得在 `Destination: Copy items if needed` 前面打勾。
 
 ## 3. 说明
 
